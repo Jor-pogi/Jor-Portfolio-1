@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+   <nav id="desktop-nav">
+    <div class="logo"><img src="assets/joross logo.png" alt=""></div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#About">About</a></li>
+            <li><a href="#Experience">Experience</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>  
+    </div>
+   </nav>
+   <nav id="hamburger-nav"> 
+    <div class="logo">Joross</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#About"  onclick="toggleMenu()"></a>>About</a></li>
+            <li><a href="#Experience"  onclick="toggleMenu()"></a>>Experience</a></li>
+            <li><a href="#Projects"  onclick="toggleMenu()"></a>>Projects</a></li>
+            <li><a href="#Contact"  onclick="toggleMenu()"></a>>Contact</a></li>
+
+        </div>
+    </div>
+   </nav>
+   <section id="profile">
+    <div class="section__pic-container">
+        <img src="./assets/jor profile.jpg" alt="Joross profile picture">
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Joross</h1>
+        <p class="section__text__p2">BSCpE Student</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2"
+          onclick="window.open('./assets/')">Download CV
+
+          </button>
+          <button class="btn btn-color-1"
+          onclick="location.href='./#Contact'">Contact Info
+
+          </button>
+        </div> 
+        <div id="socials-container">
+            <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://Linkedin.com'">
+        </div>
+            <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com'">
+        </div>
+    </div>
+   </section>  
+   <section id="About">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="section__pic-container">
+            <img src="./assets/jor profileee.jpg" alt="Profile picture" class="about-pic"/>
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="assets/experience.png" alt="Experience icon" class="icon"/>
+                    <h3>Experience</h3>
+                    <p>No Experience <br>Beginner</p>
+                </div>
+                <div class="details-container">
+                    <img src="assets/education.png" alt="Education icon" class="icon"/>
+                    <h3>Education</h3>
+                    <p>2nd year <br>BS. Computer Engineering student of <br>Universidad De Zamboanga</p>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>As a second-year BS Computer Engineering student at Universidad de Zamboanga, I am learning the fundamentals of programming, electronics, and data structures. My courses combine theory and hands-on practice, helping me develop problem-solving skills. I enjoy working on group projects, which enhance my teamwork and technical abilities. This experience is preparing me for a future career in engineering and technology..</p>
+            </div>
+        </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./experience'"
+    />
+   </section>
+   <section id="Experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+                <h2 class="experience-sub-title">Newbie Developer</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="assets/checkmark.png" alt="Experience icon" class="icon" 
+                        />
+                        <div>
+                            <h3>No</h3>
+                            <p>Experience</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./experience'" />
+   </section>
+   <section id="Projects">
+    <p class="section__text__p1">Browse My</p>
+    <h1 class="title">Project</h1>
+    <div class="experience-details-container">
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="./assets/no project.jpg" alt="Project 1">
+            </div>
+        </div>
+    </div>
+   </section>
+   <section id="Contact">
+    <p class="section__text__p1">Get In Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+            <p><a href="MailTo:joross.francisco@one.uz.edu.ph">joross.francisco@one.uz.edu.ph</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img src="./assets/linkedin.png" alt="LinkedIn" class="icon contact-icon"/>
+            <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            
+        </div>
+    </div>
+   </section>
+   <footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#About">About</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>  
+        </div>
+    </nav>
+    <p>Copyright &#169; 2024 Joross. All Rights Reserved </p>
+   </footer>
+    <script src="script.js"></script>
+</body>
+</html>
